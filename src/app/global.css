@@ -1,0 +1,685 @@
+*{
+ margin: 0px ; 
+ padding: 0px ;
+ box-sizing: border-box ;
+}
+.newflex{
+   width: 500px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;  
+}
+.top-button{
+      padding: auto 10px;
+      height: 41px;
+      width: 71px;
+      background-color: white;
+      margin: 5px 0px 5px -20px ;
+  }
+.field{
+  height: 41px;
+  display: flex;
+  position: relative;
+  width: 424px ;
+  margin: 5px 2px 5px 7px;
+}
+
+ .field input
+{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 10px 0 38px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.field input::placeholder{
+  color: gray;
+}
+.field .icon{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: gray;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.small-pic{
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%;
+    margin-left: -2px;
+}
+.small-ico{
+  font-size:16px;
+}
+.App{
+    background-color: rgba(0, 106, 5,1);   
+    max-width: 1440px;
+    height:1024px;
+    display: grid;
+    grid-template-columns: 13.9% 86.2%;
+    padding: 9px 10px 9px 15px ;
+}
+.pic{
+    width: 102px;
+    height: 82px;
+    margin: 22px 32px 51px;
+}
+.menu-bar{
+    background-color: white;
+    border-radius: 16px;
+}
+.v-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:80%;
+}
+.Top > :first-child {
+  color: white;
+  background-color: rgba(0, 106, 5, 1);
+}
+.cont {
+  padding: 10px 17px 10px 14px !important;
+  border: 1px solid rgba(0, 106, 5,1);
+  margin: 8px;
+  font-size: 14px;
+  color: rgba(0, 106, 5, 1);
+  box-sizing: border-box;
+}
+
+.cont * {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: inherit;
+}
+
+.radio-cont{
+    margin: 15px 25px;
+}
+.radio-cont label{
+  margin-left: 6px;
+  font-size: 0.8em;
+  color: rgba(0, 106, 5,1);
+}
+
+.radio {
+    appearance: none;          
+    width: 16px;
+    height: 16px;
+    border: 2px solid green;   
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .radio:checked::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%;
+  }
+
+  .main{
+    font-size: 0.9em;
+  }
+  .top-search{
+    width: 424px;
+    height: 41px;
+    margin: 0px 18px 10px 10px;
+    border-radius: 8px;
+    padding: 17px 12px;
+  }
+  
+  .body-cont{
+       background-color: rgba(247, 244, 244, 1);
+       height: 944px;
+       max-width: 1219px;
+       border-radius: 20px;
+       padding: 26px 0px 0px 31px;
+  }
+  .blue-text{
+    color: rgba(7, 15, 101,1);
+    font-size: 32px;
+    font-weight:500;
+  }
+  .wrapper{
+    max-width: 1180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .revenue{
+    width: 57.4%;
+    /*width: 635px;*/
+    height: 290px;
+    background-color: white;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    padding:20px;
+    margin-top: 31px;
+  }
+  .flex-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .blue-sm-text{
+    color: rgba(7, 15, 101,1);
+    font-size: 24px;
+    font-weight:500;
+    margin-bottom: 30px;
+  }
+  .blue-outline{
+    width: 126px;
+    height: 46px;
+    padding: 10px 8px;
+    border: 2px solid rgba(7, 15, 101,1);
+    border-radius: 10px;
+    color: rgba(7, 15, 101,1);
+    text-align: center;
+  }
+  .perform{
+    width: 42.5%;
+    height: 365px;
+    background-color: white;
+    padding:20px;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px;
+  }
+   .perform * {
+    margin: 0px;
+  }
+  .pe-grids{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 270px;
+    width: 100%;
+  }
+  .innerA {
+    width: 165px;
+  }
+  .innerB {
+    width: 235px;
+  }
+  .innerA >div, 
+    .innerB >div  {
+    border-radius: 10px;
+  }
+  .grey-box{
+    background-color: rgba(247, 244, 244, 1);
+    color:  rgba(7, 15, 101,1);
+    padding: 8px 17px;
+  }
+  
+  .inner{
+    height: 251px;
+  }
+  .sub-grid{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap:15px;
+    margin-top: 25px;
+    height: 71px;
+}
+
+.orange-box{
+    padding:  14px 5px;
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: rgb(255, 149, 0);
+    font-weight: 500;
+    border-radius: 22px;
+    text-align: center;
+}
+.orange-box h4{
+  font-size: 16px;
+}
+.ratings{
+  background-color: rgb(252, 248, 248);
+  border-radius: 4px;
+  height: 70px;
+}
+.ratings p{
+    font-size: 0.8em;
+}
+.other-box{
+    box-shadow:  0 4px 16px rgba(114, 113, 113, 0.3); /* X-offset, Y-offset, blur, color */ ;
+    padding: 16px 10px;
+    margin: 1px 0px;
+}
+
+.other-box a{
+  margin-left: 40%;
+}
+
+.star {
+  color: gold;
+  font-size: 20px;
+  margin: 2px;
+}
+.pulse{
+  color: green;
+  font-size:18px;
+}  
+
+.job-cont{
+    width: 51.3%;
+    height: 493px;
+    background-color: white;
+    padding:20px;
+}
+.small{
+    background-color: rgb(255, 149, 0);
+    width: 40%;
+    padding: 3px;
+    color: black;
+    margin: 4px auto;
+}
+
+.sm-table{
+  font-size: 0.65em;
+}
+.sm-table th, td {
+  padding: 2px;
+  vertical-align: middle;
+}
+.sm-table th{
+  text-align: center;
+  font-size: 1.1em;
+}
+.cover{
+  width: 47%;
+  height: 490px;
+}
+.acct-cont{
+  width: 100%;
+  height: 321px;
+  padding: 20px;
+  background-color:white;
+  margin-top: 19px;
+  margin-left:18px ;
+}
+.big-table td {
+  padding: 8px 8px;
+  font-size: 0.8em;
+}
+.big-table th{
+  padding: 0px 8px 18px 8px ;
+  font-size: 1em;
+}
+.big-table button{
+  padding: 3px 12px;
+  margin: auto;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 0.7em;
+}
+.details{
+  margin-top: 18px;
+}
+
+.details h2{
+  color:rgba(7, 15, 101,1) ;
+  font-size: 20px;
+  font-weight: 500;
+}
+.details h5{
+  color:rgba(7, 15, 101,1) ;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px 8px 7px 8px;
+  margin: 0px 2px;
+}
+.details p{
+  color:rgba(7, 15, 101,0.6) ;
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+.extra-sm-pic{
+  width: 15px;
+  height: 15px;
+  font-size: 17px;
+  border-radius: 50%;
+  border: 1px solid rgba(189, 182, 182,0.7);
+  margin-right: 2px;
+  margin-top: 2px;
+}
+
+
+.bar-chart{
+  margin: auto;
+  width: 105%;
+  height: 200px;
+}
+.big{
+  font-size: 1.4em;
+}
+.name{
+  color:rgba(7, 15, 101,1) ;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+a{
+  color: green !important ;
+  text-decoration: none !important;
+}
+
+.bars{
+  height: 106px;
+  width: 100%;
+  margin-top: 40px;
+  margin-left:18px ;
+  background-color: white;
+  padding: 10px 20px !important;
+  border-radius: 20px;
+}
+
+.bars p{
+  font-size: 0.8em;
+}
+
+.bars * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -5px;
+}
+
+.input-box button{
+  padding:7px 12px;
+  background-color: #fff;
+  border: 2px blue solid;
+  color:blue;
+  border-radius: 13px;
+}
+
+.input-box input[type="text"]{
+  border-radius: 5px;
+  width: 246px;
+  height: 35px;
+}
+
+.dropdown-container {
+  position: relative;
+  width: 80px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.dropdown-head {
+  padding:7px 12px;
+  border: 1px solid blue;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  user-select: none;
+}
+
+.arrow {
+  float: right;
+}
+
+.left-list {
+  padding: 0px;
+  position: absolute;
+  top: 100%;
+  right:  30px;
+  width: 150%;
+  background: white;
+  border: 2px solid blue;
+  border-radius:20px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+}
+.right-list {
+  padding: 0px;
+  position: absolute;
+  top: 100%;
+  left:  10px;
+  width: 150%;
+  background: white;
+  border: 2px solid blue;
+  border-radius:20px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 12px;
+}
+
+
+.right-list li, .left-list li {
+  padding: 6px 9px 6px 4px ;
+  border-bottom: 2px solid blue;
+  font-size: 0.8em;
+}
+
+.right-list li:last-child, .left-list li:last-child{
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 1320px){
+
+  .App{
+    grid-template-columns: 15% 85%;
+    padding: 9px;
+}
+.revenue{
+  width: 53.4%; 
+}
+
+.perform{
+  width: 45.5%;
+}
+  
+}
+
+@media screen and (max-width: 1160px){
+     .body-cont{
+       padding: 10px 0px 0px 1px;
+  }
+
+  .revenue{
+  width: 50.4%;
+  padding:20px 5px;
+}
+
+.perform{
+  width: 48.5%;
+  padding:20px 5px;
+}
+
+.bar-chart{
+  width: 110%;
+}
+.cover{
+  width: 45%;
+  height: auto;
+}
+
+.acct-cont{
+  height: auto;
+  padding: 16pxx;
+  margin-left:8px ;
+}
+
+.job-cont{
+    width: 53.3%;
+    height: auto;
+    padding:16px;
+}
+.input-box input[type="text"]{
+  width: 240px;
+}
+}
+
+@media screen and (max-width: 980px){
+  .body-cont{
+       padding: 10px 0px 0px 1px;
+       height: auto;
+  }
+     .wrapper{
+    display: flex;
+    flex-direction: column;   
+    gap: 15px;
+  }
+  .App{
+    height:auto;
+    display: grid;
+    grid-template-columns: 22% 78%;
+    padding: 9px 10px 9px 15px ;
+}
+.revenue{
+  width: 90.4%;
+  padding:20px;
+  margin: auto;
+}
+
+.perform{
+  width: 78.5%;
+ padding:20px;
+  margin: auto;
+}
+
+.bar-chart{
+  width:100%;
+}
+.cover{
+  width: 77%;
+  height: auto;
+  margin: auto;
+}
+
+.acct-cont{
+  height: auto;
+  padding: 20px;
+  margin: auto;
+}
+
+.job-cont{
+    width: 83.3%;
+    height: auto;
+   margin: auto;
+}
+
+}
+@media screen and (max-width: 745px){
+   .App{
+    height:auto;
+    display: grid;
+    grid-template-columns: 26% 74%;
+    padding: 9px 10px 9px 15px ;
+}
+.newflex{
+   max-width: 500px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;  
+}
+
+.revenue{
+  width: 100%;
+  padding:20px;
+  margin: auto;
+}
+
+.perform{
+  width: 96%;
+ padding:20px;
+  margin: auto;
+}
+
+.bar-chart{
+  width:100%;
+}
+.cover{
+  width: 96%;
+  height: auto;
+  margin: auto;
+}
+
+.acct-cont{
+  height: auto;
+  padding: 20px;
+  margin: auto;
+}
+
+.job-cont{
+    width: 96%;
+    height: auto;
+   margin: auto;
+}
+
+}
+@media screen and (max-width: 505px){
+.App{
+    height:auto;
+    display: grid;
+    grid-template-columns:100%;
+    padding: 9px 10px 9px 15px ;
+}
+.menu-bar{
+    display: none;
+}
+.revenue{
+  width: 100%;
+  padding:5px;
+  margin: auto;
+  overflow:scroll;
+
+}
+
+.perform{
+  width: 100%;
+  padding:5px;
+  margin: auto;
+  height: auto;
+}
+
+.bar-chart{
+  width:120%; 
+}
+.cover{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.bars{
+  margin-left: 0px;
+}
+
+.acct-cont{
+  height: auto;
+  padding: 20px;
+  margin: auto;
+}
+
+.job-cont{
+    width: 100%;
+    height: auto;
+   margin: auto;
+}
+}
